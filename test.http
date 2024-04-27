@@ -2,3 +2,21 @@
 
 ###
 GET http://localhost/{{port}}/
+
+###
+GET http://localhost/{{port}}/books
+Accept: application/json
+
+###
+GET http://localhost/{{port}}/book/1
+Accept: application/json
+
+###
+POST http://localhost/{{port}}/book
+Content-Type: application/json
+
+{
+    "id": 4,
+    "title": "The Way Of Kings",
+    "author": "Brandon Sanderson"
+}
